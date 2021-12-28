@@ -90,10 +90,6 @@ button a {
         gap: 2rem;
     }
 
-    img {
-        max-width: 300px !important;
-    }
-
     .info-flex {
         display: flex;
         flex-direction: column;
@@ -101,15 +97,5 @@ button a {
         text-align: center;
         margin: 0.5rem;
         gap: 1rem;
-    }
-}
-
-@media only screen and (max-width: 300px) {
-    .show-title {
-        font-size: 1.75rem;
-    }
-
-    img {
-        max-width: 230px !important;
     }
 }
