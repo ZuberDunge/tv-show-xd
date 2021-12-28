@@ -1,0 +1,82 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;600&display=swap');
+
+:root {
+    --primary: #EF233C;
+    --secondary: #2b3148;
+    --third: #333545
+}
+
+body {
+    font-family: 'Raleway', sans-serif;
+    background-color: #2B2D42;
+    color: #fff;
+}
+
+
+
+* {
+    word-wrap: break-word;
+}
+
+.show-title {
+    font-size: 1.5rem;
+    font-weight: 600;
+}
+
+
+.show-item {
+    max-width: 250px;
+    margin: 0.5rem 0;
+    flex-direction: column;
+    display: flex;
+    justify-content: space-between;
+    /* border-top-right-radius: 2rem;
+    border-bottom-left-radius: 2rem; */
+
+}
+
+.show-list {
+    max-width: 1300px;
+    margin: auto;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 0.7rem;
+}
+
+.show-item img {
+    max-width: 250px;
+    border-radius: 0.5rem;
+}
+
+.info-flex {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    text-align: center;
+    margin: 0.5rem;
+    gap: 1rem;
+}
+
+button {
+    background-color: var(--primary);
+    font-size: 1rem;
+    padding: 0.5rem 3rem;
+    border-radius: 0.25rem;
+    border: 0;
+    text-decoration: none;
+    cursor: pointer;
+    color: #fff;
+    width: 100%;
+
+}
+
+button a {
+    text-decoration: none;
+    color: #fff;
+}
+
+
+.fa-star {
+    color: var(--primary);
+}

@@ -1,0 +1,148 @@
+:root {
+
+
+    --light: #E0E7FF;
+    --white: white;
+    --white: #ddedec;
+    --text: black;
+    --prj-heading: #191F42;
+    --popup-btn: #4338CA;
+    --skill-names: #191F42;
+    --abs-bg: #191F42;
+}
+
+:root {
+    --primary: #EF233C;
+    --secondary: #2b3148;
+    --third: #333545;
+    --white: #fff
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+    max-width: 1300px;
+    width: 100%;
+    margin: auto;
+    padding: 2rem 1rem;
+
+}
+
+h2 {
+    font-weight: 600;
+}
+
+.contact-div1 {
+    width: 50%;
+}
+
+input {
+    font-size: 1rem;
+    font-weight: lighter;
+    color: var(--white);
+    background-color: var(--third);
+    outline: none;
+    border: 0 solid var(--white);
+    padding: 0.5rem;
+    width: 100%;
+    border-radius: 0.25rem;
+    margin-top: 0.5rem;
+    border: 1px solid transparent;
+}
+
+input:focus {
+    border: 2px solid var(--primary);
+}
+
+label {
+    font-size: 1rem;
+}
+
+.btn-form {
+    padding: 0.75rem 2rem;
+    background-color: var(--primary);
+    border-radius: 0.25rem;
+    color: var(--white);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    width: 100%;
+}
+
+.btn-form:hover {
+    border: 2px solid var(--white);
+}
+
+.cancel-btn {
+    padding: 0.75rem 2rem;
+    background-color: var(--secondary);
+    border-radius: 0.25rem;
+    color: var(--white);
+    cursor: pointer;
+    border: 2px solid var(--primary);
+    width: 100%;
+}
+
+.btn-flex {
+    display: flex;
+    gap: 1rem;
+}
+
+
+form {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+
+@media screen and (max-width: 953px) {
+    form {
+        width: 100%;
+    }
+
+    .contact-div1 {
+        width: 90%;
+    }
+
+    .btn-form {
+        width: 100%;
+    }
+
+    .form {
+        display: flex;
+        flex-direction: column-reverse;
+        gap: 1rem;
+        width: 90%;
+        margin: auto;
+        padding: 1rem 0;
+    }
+
+
+
+    .contacts-icon {
+        font-size: 1rem;
+        margin-right: 0.5rem;
+    }
+
+
+
+}
+
+
+
+
+.movie-poster img {
+    max-width: 400px;
+}
+
+label p {
+    color: var(--primary);
+}

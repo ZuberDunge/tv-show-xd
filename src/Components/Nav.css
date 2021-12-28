@@ -1,0 +1,52 @@
+:root {
+    --primary: #EF233C;
+    --secondary: #2b3148;
+    --third: #333545
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.nav {
+    max-width: 1300px;
+    margin: 0 auto 1rem;
+    display: flex;
+    justify-content: space-between;
+    padding: 1rem 0;
+    background-color: var(--primary);
+    align-items: center;
+    color: var(--secondary);
+
+}
+
+.bg-nav {
+    background-color: var(--primary);
+    padding: 0 1.25rem;
+}
+
+.nav .fa-github {
+    font-size: 32px;
+}
+
+h1 {
+    background-color: var(--primary);
+    margin: 0;
+    color: #fff;
+}
+
+.nav a {
+    color: var(--secondary);
+    text-decoration: none;
+}
+
+.nav a {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.nav a span {
+    font-size: 1.25rem;
+}
