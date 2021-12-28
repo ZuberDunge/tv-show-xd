@@ -149,16 +149,19 @@ label p {
 }
 
 .success {
-    position: absolute;
+    position: fixed;
     right: 0%;
     left: 0%;
     top: 0%;
+    bottom: 0;
     background-color: var(--primary);
     margin: auto;
     height: 100vh;
     font-size: 2rem;
+    padding: 1rem;
     width: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
 }
