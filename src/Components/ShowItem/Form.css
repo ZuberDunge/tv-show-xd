@@ -1,17 +1,4 @@
 :root {
-
-
-    --light: #E0E7FF;
-    --white: white;
-    --white: #ddedec;
-    --text: black;
-    --prj-heading: #191F42;
-    --popup-btn: #4338CA;
-    --skill-names: #191F42;
-    --abs-bg: #191F42;
-}
-
-:root {
     --primary: #EF233C;
     --secondary: #2b3148;
     --third: #333545;
@@ -126,19 +113,12 @@ form {
         padding: 1rem 0;
     }
 
-
-
     .contacts-icon {
         font-size: 1rem;
         margin-right: 0.5rem;
     }
 
-
-
 }
-
-
-
 
 .movie-poster img {
     max-width: 400px;

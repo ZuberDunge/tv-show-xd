@@ -1,10 +1,10 @@
 import './App.css';
 import React from "react";
-import HomePage from './Components/HomePage';
+import HomePage from './Components/HomePage/HomePage';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import Show from './Components/Show';
-import Nav from './Components/Nav';
-import Footer from './Components/Footer';
+import Show from './Components/ShowItem/Show';
+import Nav from './Components/Nav/Nav';
+import Footer from './Components/Footer/Footer';
 function App() {
   return (
     <>

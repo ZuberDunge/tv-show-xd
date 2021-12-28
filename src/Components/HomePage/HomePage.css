@@ -2,14 +2,15 @@
 
 :root {
     --primary: #EF233C;
-    --secondary: #2b3148;
-    --third: #333545
+    --secondary: #2B2D42;
+    --third: #333545;
+    --white: #fff
 }
 
 body {
     font-family: 'Raleway', sans-serif;
-    background-color: #2B2D42;
-    color: #fff;
+    background-color: var(--secondary);
+    color: var(--white);
 }
 
 
