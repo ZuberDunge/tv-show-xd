@@ -61,7 +61,7 @@ body {
 button {
     background-color: var(--primary);
     font-size: 1rem;
-    padding: 0.5rem 3rem;
+    padding: 0.5rem;
     border-radius: 0.25rem;
     border: 0;
     text-decoration: none;
