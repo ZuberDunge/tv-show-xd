@@ -64,26 +64,39 @@
     font-weight: 600;
 }
 
-@media only screen and (max-width: 800px) {
-
-    img {
-        max-width: 300px !important;
-    }
-
-    .show-title-one {
-        font-size: 2.5rem !important;
-    }
-}
-
 @media only screen and (max-width: 666px) {
     .show-item-one {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 2rem;
+    }
+
+    .show-title-one {
+        font-size: 2rem !important;
+    }
+
+    .show-item {
+        max-width: 300px;
+    }
+
+    img {
+        max-width: 320px !important;
     }
 
     .nav a span {
         display: none;
     }
 
+}
+
+@media only screen and (max-width: 800px) {
+
+    img {
+        max-width: 320px !important;
+    }
+
+    .show-title-one {
+        font-size: 2.5rem;
+    }
 }

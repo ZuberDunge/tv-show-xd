@@ -80,3 +80,25 @@ button a {
 .fa-star {
     color: var(--primary);
 }
+
+@media only screen and (max-width: 666px) {
+    .show-item-one {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    img {
+        max-width: 300px !important;
+    }
+
+    .info-flex {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        text-align: center;
+        margin: 0.5rem;
+        gap: 1rem;
+    }
+}

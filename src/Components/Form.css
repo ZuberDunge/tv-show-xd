@@ -65,7 +65,7 @@ label {
 }
 
 .btn-form {
-    padding: 0.75rem 2rem;
+    padding: 0.75rem;
     background-color: var(--primary);
     border-radius: 0.25rem;
     color: var(--white);
@@ -79,7 +79,7 @@ label {
 }
 
 .cancel-btn {
-    padding: 0.75rem 2rem;
+    padding: 0.75rem;
     background-color: var(--secondary);
     border-radius: 0.25rem;
     color: var(--white);
