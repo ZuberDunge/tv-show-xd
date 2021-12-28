@@ -3,6 +3,7 @@ import { useEffect } from 'react';
 import axios from "axios";
 import "./Show.css"
 import { Link } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import "./Form.css"
 import { useParams } from "react-router-dom";
 import parse from 'html-react-parser';
@@ -14,7 +15,8 @@ function Show() {
     const [show, setShowBase] = useState({});
     const [loaded, setloaded] = useState(false);
     const [bookClicked, setBookClicked] = useState(false);
-
+    const [isbooked, setBooked] = useState(false);
+    let goBack = useNavigate()
     const getShowsData = async () => {
         try {
             const data = await
@@ -38,7 +40,16 @@ function Show() {
         handleSubmit,
         formState: { errors },
     } = useForm();
-    const onSubmit = (data) => localStorage.setItem("ticketDetails", data);
+    const onSubmit = (data) => {
+        localStorage.setItem("ticketDetails", data)
+        console.log(data)
+        setTimeout(function () {
+
+            goBack("/")
+        }, 3000);
+
+        setBooked(true)
+    }
 
     return (
         <>
@@ -90,18 +101,6 @@ function Show() {
                                     name="username"
                                     readOnly
                                     value={`${show.runtime} mins`}
-                                />
-                            </label>
-                        </p>
-                        <p>
-                            <label>
-                                Show Name
-                                <input
-                                    required
-                                    type="text"
-                                    name="username"
-                                    readOnly
-                                    value={show.name}
                                 />
                             </label>
                         </p>
@@ -183,7 +182,7 @@ function Show() {
 
 
             }
-
+            {isbooked ? <div className="success">Congratulatons! Ticket for "{show.name}"  is booked <br /> <br />Redirecting to Home 3...2...1</div> : null}
         </>
     )
 }
